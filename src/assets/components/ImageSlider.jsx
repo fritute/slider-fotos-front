@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import './ImageSlider.css';
 
@@ -16,8 +15,8 @@ const ImageSlider = () => {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-      
-        setFotos(data.slice(0, 4));
+        setFotos(data); 
+        
       } catch (e) {
         setError("Não foi possível carregar as fotos. Verifique se o JSON Server está rodando.");
         console.error("Erro ao buscar fotos:", e);
@@ -29,12 +28,11 @@ const ImageSlider = () => {
     fetchFotos();
   }, []);
 
-  // Troca automática de imagem a cada 7 segundos
   useEffect(() => {
     if (fotos.length <= 1) return; 
     
     const interval = setInterval(() => {
-      nextSlide();
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % fotos.length);
     }, 7000);
     
     return () => clearInterval(interval);

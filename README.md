@@ -1,14 +1,26 @@
-# React + Vite
+# Carossel de Imagens 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![](./img/Captura%20de%20Tela%202025-08-07%20%C3%A0s%2010.45.23.png)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Sobre
+Utilizando API MOCK criada por mim utilizando JS-SERVER, Criei um Carrosel com 4 fotos de momentos que me marcaram no Senai e Lugares importantes para minha jornada.
+Ele a cada 7 segundos troca de foto.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# slider-fotos-front
-# slider-fotos-front
+Caso tenham curiosidade esse e o repositorio: https://github.com/fritute/slider-fotos-back
+
+___
+
+## Tecnologias utilizadas
+- HTML
+- CSS
+- React
+- Vite
+- Git
+
+---
+## Autor
+- [Gustavo Zumba de Amorim](https://www.linkedin.com/in/gustavo-zumba-14ba1331b/)
+
