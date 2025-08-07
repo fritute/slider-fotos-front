@@ -10,7 +10,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const fetchFotos = async () => {
       try {
-        const response = await fetch('http://localhost:3000/fotos');
+        const response = await fetch('https://slider-fotos-back-senai.onrender.com/fotos');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
